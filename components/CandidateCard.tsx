@@ -25,7 +25,7 @@ const CandidateCard: React.FC<CandidateCardProps> = ({ candidate, index }) => {
       <div className="relative">
         <img 
           className="w-full h-56 object-cover object-center" 
-          src={`https://picsum.photos/seed/${encodeURIComponent(candidate.name)}/600/400`} 
+          src={candidate.imageUrl} 
           alt={candidate.photoDescription}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>

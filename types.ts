@@ -5,4 +5,5 @@ export interface Candidate {
   bio: string;
   headlines: string[];
   quotes: string[];
+  imageUrl: string;
 }
