@@ -5,86 +5,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2028</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'brand-blue': '#2563eb',
-              'brand-red': '#dc2626',
-            },
-            animation: {
-                'fade-in': 'fadeIn 1s ease-in-out',
-                'slide-up': 'slideUp 0.5s ease-out forwards',
-            },
-            keyframes: {
-                fadeIn: {
-                    '0%': { opacity: 0 },
-                    '100%': { opacity: 1 },
-                },
-                slideUp: {
-                    '0%': { transform: 'translateY(20px)', opacity: 0 },
-                    '100%': { transform: 'translateY(0)', opacity: 1 },
-                }
-            }
-          }
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
+  <body>
 
-    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10 shadow-lg shadow-gray-900/50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div class="text-center animate-fade-in">
-          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-            <span class="bg-gradient-to-r from-brand-blue via-blue-400 to-gray-200 bg-clip-text text-transparent">Project 2028</span>
+    <header>
+      <div class="container">
+        <div class="text-center">
+          <h1>
+            <span class="gradient-text">Project 2028</span>
           </h1>
-          <p class="mt-2 text-lg text-gray-400">
+          <p>
             A look at the potential Democratic presidential candidates
           </p>
         </div>
       </div>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+    <main class="container">
+        <div class="grid">
             <!-- Kamala Harris -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 0ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/kamala-harris.jpg" alt="Official portrait of Vice President Kamala Harris.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Kamala Harris</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of Vice President Kamala Harris.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/kamala-harris.jpg" alt="Official portrait of Vice President Kamala Harris.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Kamala Harris</h2>
+                  <p>Official portrait of Vice President Kamala Harris.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Kamala Harris is the current Vice President of the United States, serving alongside President Joe Biden. Prior to her vice presidency, she served as a U.S. Senator from California and as Attorney General of California. Her career has been marked by a focus on criminal justice reform and civil rights.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Kamala Harris is the current Vice President of the United States, serving alongside President Joe Biden. Prior to her vice presidency, she served as a U.S. Senator from California and as Attorney General of California. Her career has been marked by a focus on criminal justice reform and civil rights.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Harris announces new federal investments in small business programs.</li>
                     <li>Vice President Harris travels to Southeast Asia to strengthen diplomatic ties.</li>
                     <li>Harris leads White House task force on voting rights.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"My mother would look at me and she’d say, ‘Kamala, you may be the first to do many things, but make sure you are not the last.’"</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"My mother would look at me and she'd say, 'Kamala, you may be the first to do many things, but make sure you are not the last.'"</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"The American dream belongs to all of us."</p>
+                    <blockquote>
+                       <p>"The American dream belongs to all of us."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"There is no vaccine for racism. We've got to do the work."</p>
+                    <blockquote>
+                       <p>"There is no vaccine for racism. We've got to do the work."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -92,39 +66,39 @@
             </div>
 
             <!-- Gavin Newsom -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 100ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/gavin-newsom.jpg" alt="Official portrait of California Governor Gavin Newsom.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Gavin Newsom</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of California Governor Gavin Newsom.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/gavin-newsom.jpg" alt="Official portrait of California Governor Gavin Newsom.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Gavin Newsom</h2>
+                  <p>Official portrait of California Governor Gavin Newsom.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Gavin Newsom is the 40th Governor of California, a position he has held since 2019. A prominent figure in the Democratic Party, he previously served as Lieutenant Governor of California and Mayor of San Francisco. His governorship has focused on issues like climate change, homelessness, and education.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Gavin Newsom is the 40th Governor of California, a position he has held since 2019. A prominent figure in the Democratic Party, he previously served as Lieutenant Governor of California and Mayor of San Francisco. His governorship has focused on issues like climate change, homelessness, and education.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Newsom unveils ambitious plan to combat climate change in California.</li>
                     <li>California budget surplus leads to new social program spending under Newsom.</li>
                     <li>Governor Newsom signs legislation to expand affordable housing.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"The future happens here first. California is the bastion of the possible."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"The future happens here first. California is the bastion of the possible."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We are not victims of fate. We are masters of our own destiny."</p>
+                    <blockquote>
+                       <p>"We are not victims of fate. We are masters of our own destiny."</p>
                     </blockquote>
-                     <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"You have to be willing to take risks, to be willing to fail, and to be willing to get back up again."</p>
+                     <blockquote>
+                       <p>"You have to be willing to take risks, to be willing to fail, and to be willing to get back up again."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -132,39 +106,39 @@
             </div>
 
             <!-- Gretchen Whitmer -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 200ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/gretchen-whitmer.jpg" alt="Official portrait of Michigan Governor Gretchen Whitmer.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Gretchen Whitmer</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of Michigan Governor Gretchen Whitmer.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/gretchen-whitmer.jpg" alt="Official portrait of Michigan Governor Gretchen Whitmer.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Gretchen Whitmer</h2>
+                  <p>Official portrait of Michigan Governor Gretchen Whitmer.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Gretchen Whitmer is the 49th Governor of Michigan, serving since 2019. Known for her focus on infrastructure with the slogan "Fix the damn roads," she has also prioritized healthcare and education. She previously served in both the Michigan House of Representatives and the Michigan Senate.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Gretchen Whitmer is the 49th Governor of Michigan, serving since 2019. Known for her focus on infrastructure with the slogan "Fix the damn roads," she has also prioritized healthcare and education. She previously served in both the Michigan House of Representatives and the Michigan Senate.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Whitmer announces major infrastructure investment plan for Michigan.</li>
                     <li>Governor Whitmer signs bipartisan education budget into law.</li>
                     <li>Michigan's job growth a key focus of Whitmer's economic agenda.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We may have different parties, but we are all Michiganders first."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"We may have different parties, but we are all Michiganders first."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Tough times don’t last, but tough people do."</p>
+                    <blockquote>
+                       <p>"Tough times don't last, but tough people do."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Action is the only way to move forward."</p>
+                    <blockquote>
+                       <p>"Action is the only way to move forward."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -172,39 +146,39 @@
             </div>
 
             <!-- Jared Polis -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 300ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/jared-polis.jpg" alt="Official portrait of Colorado Governor Jared Polis.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Jared Polis</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of Colorado Governor Jared Polis.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/jared-polis.jpg" alt="Official portrait of Colorado Governor Jared Polis.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Jared Polis</h2>
+                  <p>Official portrait of Colorado Governor Jared Polis.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Jared Polis is the 43rd Governor of Colorado, an entrepreneur, and a philanthropist. Before his governorship, he represented Colorado's 2nd congressional district in the U.S. House of Representatives. As governor, he has focused on early childhood education, renewable energy, and lowering healthcare costs.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Jared Polis is the 43rd Governor of Colorado, an entrepreneur, and a philanthropist. Before his governorship, he represented Colorado's 2nd congressional district in the U.S. House of Representatives. As governor, he has focused on early childhood education, renewable energy, and lowering healthcare costs.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Polis champions Colorado's transition to renewable energy sources.</li>
                     <li>Governor Polis signs bill for free full-day kindergarten across the state.</li>
                     <li>Colorado ranked as one of the top state economies under Polis's leadership.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"In Colorado, we see our diversity as a strength."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"In Colorado, we see our diversity as a strength."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We need to think big and be bold."</p>
+                    <blockquote>
+                       <p>"We need to think big and be bold."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"The role of government is to create a framework for people to succeed."</p>
+                    <blockquote>
+                       <p>"The role of government is to create a framework for people to succeed."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -212,39 +186,39 @@
             </div>
 
             <!-- J. B. Pritzker -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 400ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/jb-pritzker.jpg" alt="Official portrait of Illinois Governor J. B. Pritzker.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">J. B. Pritzker</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of Illinois Governor J. B. Pritzker.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/jb-pritzker.jpg" alt="Official portrait of Illinois Governor J. B. Pritzker.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>J. B. Pritzker</h2>
+                  <p>Official portrait of Illinois Governor J. B. Pritzker.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">J. B. Pritzker, a businessman and philanthropist, is the 43rd Governor of Illinois. Since taking office in 2019, he has signed bills to legalize recreational cannabis, expand gambling, and raise the minimum wage. He has made balancing the state's budget and investing in infrastructure key priorities.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>J. B. Pritzker, a businessman and philanthropist, is the 43rd Governor of Illinois. Since taking office in 2019, he has signed bills to legalize recreational cannabis, expand gambling, and raise the minimum wage. He has made balancing the state's budget and investing in infrastructure key priorities.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Pritzker signs a balanced budget, earning Illinois a credit rating upgrade.</li>
                     <li>Governor Pritzker launches "Rebuild Illinois" infrastructure plan.</li>
                     <li>Illinois becomes a focal point for reproductive rights under Pritzker.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Optimism is a moral choice, and it is a choice that has powered this state."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"Optimism is a moral choice, and it is a choice that has powered this state."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We are a state that is embracing the future."</p>
+                    <blockquote>
+                       <p>"We are a state that is embracing the future."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Fiscal responsibility is the foundation upon which we can build a better future."</p>
+                    <blockquote>
+                       <p>"Fiscal responsibility is the foundation upon which we can build a better future."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -252,39 +226,39 @@
             </div>
 
             <!-- Andy Beshear -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 500ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/andy-beshear.jpg" alt="Official gubernatorial portrait of Kentucky Governor Andy Beshear.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Andy Beshear</h2>
-                  <p class="text-sm text-gray-400 italic">Official gubernatorial portrait of Kentucky Governor Andy Beshear.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/andy-beshear.jpg" alt="Official gubernatorial portrait of Kentucky Governor Andy Beshear.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Andy Beshear</h2>
+                  <p>Official gubernatorial portrait of Kentucky Governor Andy Beshear.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Andy Beshear is the 63rd Governor of Kentucky, serving since 2019. Prior to being elected governor, he served as the Attorney General of Kentucky. His tenure as governor has been marked by his response to natural disasters and a focus on economic development and job creation in the state.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Andy Beshear is the 63rd Governor of Kentucky, serving since 2019. Prior to being elected governor, he served as the Attorney General of Kentucky. His tenure as governor has been marked by his response to natural disasters and a focus on economic development and job creation in the state.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Beshear leads Kentucky's response to historic flooding and tornadoes.</li>
                     <li>Kentucky announces record economic investment and job growth.</li>
                     <li>Governor Beshear expands access to healthcare for Kentuckians.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"My faith teaches me that we are all our brother's and our sister's keeper."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"My faith teaches me that we are all our brother's and our sister's keeper."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"In Kentucky, we look out for our neighbors."</p>
+                    <blockquote>
+                       <p>"In Kentucky, we look out for our neighbors."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We are one team, Team Kentucky."</p>
+                    <blockquote>
+                       <p>"We are one team, Team Kentucky."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -292,39 +266,39 @@
             </div>
 
             <!-- Wes Moore -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 600ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/wes-moore.jpg" alt="Official portrait of Maryland Governor Wes Moore.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Wes Moore</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of Maryland Governor Wes Moore.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/wes-moore.jpg" alt="Official portrait of Maryland Governor Wes Moore.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Wes Moore</h2>
+                  <p>Official portrait of Maryland Governor Wes Moore.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Wes Moore is the 63rd Governor of Maryland and the state's first African American governor. He is also a combat veteran, bestselling author, and former CEO of an anti-poverty organization. His administration is focused on creating economic opportunity and building safer communities.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Wes Moore is the 63rd Governor of Maryland and the state's first African American governor. He is also a combat veteran, bestselling author, and former CEO of an anti-poverty organization. His administration is focused on creating economic opportunity and building safer communities.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Moore administration launches new initiatives to combat child poverty.</li>
                     <li>Governor Moore prioritizes Maryland's role in green energy.</li>
                     <li>Wes Moore outlines public safety plan for Baltimore.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Leave no one behind. That is the mission."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"Leave no one behind. That is the mission."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Our responsibility is not just to the present, but to the future."</p>
+                    <blockquote>
+                       <p>"Our responsibility is not just to the present, but to the future."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Patriotism and public service are not a partisan issue."</p>
+                    <blockquote>
+                       <p>"Patriotism and public service are not a partisan issue."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -332,39 +306,39 @@
             </div>
 
             <!-- Roy Cooper -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 700ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/roy-cooper.jpg" alt="Official portrait of North Carolina Governor Roy Cooper.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Roy Cooper</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of North Carolina Governor Roy Cooper.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/roy-cooper.jpg" alt="Official portrait of North Carolina Governor Roy Cooper.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Roy Cooper</h2>
+                  <p>Official portrait of North Carolina Governor Roy Cooper.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Roy Cooper is the 75th Governor of North Carolina, serving since 2017. He previously served as the state's Attorney General. As governor, he has focused on improving public education, creating clean energy jobs, and expanding access to affordable healthcare. He has often worked with a Republican-led legislature.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Roy Cooper is the 75th Governor of North Carolina, serving since 2017. He previously served as the state's Attorney General. As governor, he has focused on improving public education, creating clean energy jobs, and expanding access to affordable healthcare. He has often worked with a Republican-led legislature.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Cooper vetoes controversial legislation, citing harm to public schools.</li>
                     <li>North Carolina attracts major tech and manufacturing jobs under Cooper.</li>
                     <li>Governor Cooper advocates for Medicaid expansion in the state.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We need to make sure that our economy works for everyone, not just those at the top."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"We need to make sure that our economy works for everyone, not just those at the top."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"A good education is the foundation for a successful life."</p>
+                    <blockquote>
+                       <p>"A good education is the foundation for a successful life."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Common sense and compromise are not partisan values."</p>
+                    <blockquote>
+                       <p>"Common sense and compromise are not partisan values."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -372,39 +346,39 @@
             </div>
 
             <!-- Phil Murphy -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 800ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/phil-murphy.jpg" alt="Official portrait of New Jersey Governor Phil Murphy.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Phil Murphy</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of New Jersey Governor Phil Murphy.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/phil-murphy.jpg" alt="Official portrait of New Jersey Governor Phil Murphy.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Phil Murphy</h2>
+                  <p>Official portrait of New Jersey Governor Phil Murphy.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Phil Murphy is the 56th Governor of New Jersey. Before entering politics, he had a successful career in finance. Since becoming governor in 2018, he has focused on a progressive agenda, including raising the minimum wage, investing in clean energy, and expanding pre-K education.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Phil Murphy is the 56th Governor of New Jersey. Before entering politics, he had a successful career in finance. Since becoming governor in 2018, he has focused on a progressive agenda, including raising the minimum wage, investing in clean energy, and expanding pre-K education.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Murphy signs legislation making New Jersey a leader in offshore wind energy.</li>
                     <li>New Jersey's public schools ranked number one in the nation.</li>
                     <li>Governor Murphy expands state-level child tax credits.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We are building a stronger and fairer New Jersey that works for every family."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"We are building a stronger and fairer New Jersey that works for every family."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"An economy that is innovative is an economy that is inclusive."</p>
+                    <blockquote>
+                       <p>"An economy that is innovative is an economy that is inclusive."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"We believe in science, we believe in facts, and we believe in the truth."</p>
+                    <blockquote>
+                       <p>"We believe in science, we believe in facts, and we believe in the truth."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -412,39 +386,39 @@
             </div>
 
             <!-- Cory Booker -->
-            <div class="bg-gray-800/50 rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-brand-blue transition-all duration-300 transform hover:-translate-y-1 animate-slide-up" style="animation-delay: 900ms;">
-              <div class="relative">
-                <img class="w-full aspect-square object-cover object-center" src="/images/portraits/cory-booker.jpg" alt="Official portrait of U.S. Senator Cory Booker.">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
-                <div class="absolute bottom-0 left-0 p-4">
-                  <h2 class="text-3xl font-bold text-white">Cory Booker</h2>
-                  <p class="text-sm text-gray-400 italic">Official portrait of U.S. Senator Cory Booker.</p>
+            <div class="card">
+              <div class="card-image-container">
+                <img src="/images/portraits/cory-booker.jpg" alt="Official portrait of U.S. Senator Cory Booker.">
+                <div class="card-image-overlay"></div>
+                <div class="card-image-title">
+                  <h2>Cory Booker</h2>
+                  <p>Official portrait of U.S. Senator Cory Booker.</p>
                 </div>
               </div>
-              <div class="p-6 space-y-6">
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Biography</h3>
-                  <p class="text-gray-300 leading-relaxed">Cory Booker is a U.S. Senator from New Jersey, a position he has held since 2013. He was previously the Mayor of Newark. Known for his optimistic and unifying political style, Booker is a vocal advocate for criminal justice reform, economic equality, and environmental justice.</p>
+              <div class="card-content">
+                <div class="card-section">
+                  <h3 class="section-title">Biography</h3>
+                  <p>Cory Booker is a U.S. Senator from New Jersey, a position he has held since 2013. He was previously the Mayor of Newark. Known for his optimistic and unifying political style, Booker is a vocal advocate for criminal justice reform, economic equality, and environmental justice.</p>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Recent Headlines</h3>
-                  <ul class="space-y-2 list-disc list-inside text-gray-300">
+                <div class="card-section">
+                  <h3 class="section-title">Recent Headlines</h3>
+                  <ul>
                     <li>Booker introduces bipartisan bill aimed at lowering food prices.</li>
                     <li>Senator Booker advocates for federal investment in infrastructure.</li>
                     <li>Cory Booker champions legislation to reform the criminal justice system.</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-brand-blue/90 border-b-2 border-brand-blue/30 pb-2 mb-2">Notable Quotes</h3>
-                  <div class="space-y-4">
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Hope is the active conviction that despair will not have the final word."</p>
+                <div class="card-section">
+                  <h3 class="section-title">Notable Quotes</h3>
+                  <div class="quotes-container">
+                    <blockquote>
+                       <p>"Hope is the active conviction that despair will not have the final word."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"Patriotism is love of country. But you can't love your country without loving your countrymen and countrywomen."</p>
+                    <blockquote>
+                       <p>"Patriotism is love of country. But you can't love your country without loving your countrymen and countrywomen."</p>
                     </blockquote>
-                    <blockquote class="relative p-4 bg-gray-900/50 rounded-lg border-l-4 border-gray-600">
-                       <p class="italic text-gray-300">"The lines that divide us are not as strong as the ties that bind us."</p>
+                    <blockquote>
+                       <p>"The lines that divide us are not as strong as the ties that bind us."</p>
                     </blockquote>
                   </div>
                 </div>
@@ -453,10 +427,10 @@
         </div>
     </main>
     
-    <footer class="bg-gray-900 border-t border-gray-800 mt-12">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-500">
+    <footer>
+      <div class="container">
         <p>&copy; 2025 Project 2028.com. All Rights Reserved.</p>
-        <p class="text-sm mt-1">This page has been generated by AI and is intended for informational purposes only. Please verify all data. Created by <a href="https://www.linkedin.com/in/judsonneer/" target="_blank" rel="noopener noreferrer" class="text-brand-blue hover:underline">Jud Neer</a>.</p>
+        <p class="footer-credit">This page has been generated by AI and is intended for informational purposes only. Please verify all data. Created by <a href="https://www.linkedin.com/in/judsonneer/" target="_blank" rel="noopener noreferrer">Jud Neer</a>.</p>
       </div>
     </footer>
 
