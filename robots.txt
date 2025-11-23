@@ -1,0 +1,8 @@
+# Robots.txt for Project 2028
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://www.project2028.com/sitemap.xml
