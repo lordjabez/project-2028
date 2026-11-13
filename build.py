@@ -450,7 +450,7 @@ def render_page(site: Json, history: list[Json]) -> str:
     <footer>
       <div class="container">
         <p>Last updated {updated}. Independent and unaffiliated with any candidate, campaign, or party.</p>
-        <p class="footer-credit">Created by <a href="https://www.linkedin.com/in/judsonneer/" rel="noopener">Jud Neer</a>.</p>
+        <p class="footer-credit">Created by <a href="https://www.linkedin.com/in/judsonneer/" rel="noopener">Jud Neer</a>. Source on <a href="https://github.com/lordjabez/project-2028" rel="noopener">GitHub</a>.</p>
       </div>
     </footer>
   </body>
