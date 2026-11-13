@@ -45,8 +45,6 @@ body {
 header {
     background-color: rgba(17, 24, 39, 0.8);
     backdrop-filter: blur(12px);
-    position: sticky;
-    top: 0;
     z-index: 10;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
@@ -56,9 +54,37 @@ header .container {
     padding-bottom: 1rem;
 }
 
-header .text-center {
+header .container {
     text-align: center;
     animation: fadeIn 1s ease-in-out;
+}
+
+header nav {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+}
+
+header nav a {
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #60a5fa;
+}
+
+@media (min-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    section[id], article[id] {
+        scroll-margin-top: 10rem;
+    }
 }
 
 h1 {
@@ -82,8 +108,8 @@ h1 .gradient-text {
 }
 
 header p {
-    margin-top: 0.5rem;
-    font-size: 1.125rem;
+    margin-top: 0.25rem;
+    font-size: 1rem;
     color: #9ca3af;
 }
 
@@ -120,8 +146,7 @@ main {
     overflow: hidden;
     border: 1px solid #374151;
     transition: all 0.3s ease;
-    animation: slideUp 0.5s ease-out forwards;
-    opacity: 0;
+    animation: slideUp 0.5s ease-out both;
 }
 
 .card:hover {
@@ -282,19 +307,372 @@ footer a:hover {
     }
 }
 
-/* Animation delays for staggered effect */
-.card:nth-child(1) { animation-delay: 0ms; }
-.card:nth-child(2) { animation-delay: 100ms; }
-.card:nth-child(3) { animation-delay: 200ms; }
-.card:nth-child(4) { animation-delay: 300ms; }
-.card:nth-child(5) { animation-delay: 400ms; }
-.card:nth-child(6) { animation-delay: 500ms; }
-.card:nth-child(7) { animation-delay: 600ms; }
-.card:nth-child(8) { animation-delay: 700ms; }
-.card:nth-child(9) { animation-delay: 800ms; }
-.card:nth-child(10) { animation-delay: 900ms; }
+/* Panels */
+.panel {
+    background-color: rgba(31, 41, 55, 0.5);
+    border: 1px solid #374151;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
 
-/* Utility Classes */
-.text-center {
-    text-align: center;
+.panel p {
+    color: #d1d5db;
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+}
+
+.panel p:last-child {
+    margin-bottom: 0;
+}
+
+.panel a,
+.card a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.panel a:hover,
+.card a:hover {
+    text-decoration: underline;
+}
+
+.panel-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+#hopefuls > .panel-title {
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.panel .panel-note {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Weekly brief */
+.brief {
+    border-left: 4px solid #2563eb;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #60a5fa !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.brief-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* The Race */
+.race {
+    list-style: none;
+}
+
+.lane,
+.race-axis {
+    display: grid;
+    grid-template-columns: 1.5rem 9.5rem minmax(0, 1fr) 3.25rem 3.5rem 72px;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.lane {
+    padding: 0.3rem 0;
+}
+
+.race-axis .lane-track {
+    grid-column: 3;
+    height: 1.25rem;
+    background: none;
+    border: 0;
+}
+
+.race-axis span {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: #6b7280;
+}
+
+.lane-rank {
+    color: #6b7280;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+.lane-name {
+    font-weight: 600;
+    color: #f3f4f6 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lane-track {
+    height: 2.75rem;
+    border-radius: 9999px;
+    background-color: rgba(17, 24, 39, 0.6);
+    border: 1px solid #1f2937;
+    padding: 0 1.375rem;
+}
+
+.lane-inner {
+    position: relative;
+    height: 100%;
+}
+
+.lane-fill {
+    position: absolute;
+    top: 50%;
+    left: -1.375rem;
+    height: 0.375rem;
+    margin-top: -0.1875rem;
+    /* extends back to the start of the track */
+    box-sizing: content-box;
+    padding-left: 1.375rem;
+    border-radius: 9999px;
+    background: linear-gradient(to right, rgba(37, 99, 235, 0.15), #2563eb);
+}
+
+.lane-runner,
+.ghost {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.lane-runner {
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border: 2px solid #60a5fa;
+    background-color: #1f2937;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.5);
+}
+
+.lane.status-declared .lane-runner {
+    border-color: #e5e7eb;
+}
+
+.lane-runner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.monogram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #93c5fd;
+}
+
+.ghost {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid #6b7280;
+}
+
+.lane-odds {
+    font-weight: 700;
+    color: white;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.delta {
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.delta.up { color: #34d399; }
+.delta.down { color: #f87171; }
+.delta.flat { color: #6b7280; }
+.delta.new { color: #fbbf24; text-transform: uppercase; font-size: 0.7rem; }
+
+.spark {
+    display: block;
+}
+
+.spark polyline {
+    fill: none;
+    stroke: #60a5fa;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.panel .race-field {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+@media (max-width: 767px) {
+    .lane,
+    .race-axis {
+        grid-template-columns: 1.25rem minmax(0, 1fr) auto auto;
+        column-gap: 0.5rem;
+    }
+
+    .lane {
+        row-gap: 0.25rem;
+        padding: 0.5rem 0;
+    }
+
+    .lane-track {
+        grid-row: 2;
+        grid-column: 1 / -1;
+    }
+
+    .race-axis .lane-track {
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+
+    .lane-spark {
+        display: none;
+    }
+}
+
+/* Dated lists (results, key dates) */
+.dated,
+.out {
+    list-style: none;
+}
+
+.dated li {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-top: 1px solid #1f2937;
+}
+
+.dated li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.dated time {
+    color: #60a5fa;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding-top: 0.15rem;
+}
+
+.dated strong,
+.out strong {
+    color: white;
+}
+
+.out li {
+    color: #d1d5db;
+    padding: 0.35rem 0;
+}
+
+/* Card additions */
+.card-badges {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge {
+    background-color: rgba(17, 24, 39, 0.85);
+    border: 1px solid #374151;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+.badge.odds {
+    border-color: #2563eb;
+    color: #93c5fd;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background-color: rgba(75, 85, 99, 0.6);
+    color: #e5e7eb;
+}
+
+.status.status-declared {
+    background-color: #2563eb;
+    color: white;
+}
+
+.status.status-exploring {
+    background-color: rgba(37, 99, 235, 0.35);
+    color: #bfdbfe;
+}
+
+.card-monogram {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: #374151;
+    background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+.card-image-container img {
+    object-position: center 20%;
+}
+
+.cite {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    white-space: nowrap;
+}
+
+blockquote footer {
+    all: unset;
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .card, header .container { animation: none; }
+    .card:hover { transform: none; }
 }

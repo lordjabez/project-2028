@@ -1,26 +1,58 @@
-{
-  "name": "Project 2028: Democratic Hopefuls",
-  "description": "An AI-powered exploration of the top 10 potential Democratic presidential candidates for the 2028 election, featuring bios, recent headlines, and notable quotes.",
-  "requestFramePermissions": []
-}
+# Project 2028
 
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+The source for [project2028.com](https://www.project2028.com/), a static site that
+tracks the 2028 Democratic presidential field. A scheduled
+[Claude Code routine](https://code.claude.com/docs/en/routines) researches the race
+once a week, rewrites the data, rebuilds the page, and pushes it.
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1o6f3XpRgptynPU09oSWe4DtQkuSrSkY_
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+The odds on the page are the model's own judgment, not a poll or a market.
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Prerequisites
+
+- [Python](https://www.python.org/downloads/) 3.10 or later - standard library only
+- [uv](https://docs.astral.sh/uv/) - optional, for running the build locally
+
+
+## Usage
+
+Everything on the page comes from `data/site.json`. The build validates it, records
+the week's odds in `data/history.json`, and writes `index.html` and `sitemap.xml`:
+
+```bash
+uv run build.py
+
+# Preview at http://localhost:8000
+python3 -m http.server
+```
+
+Note that `index.html` is generated, so edit `build.py` or `styles.css` instead.
+
+
+## Weekly Update
+
+The routine's whole prompt is "follow `UPDATE.md`", so the editorial rules (sourcing,
+tone, how odds move) live in that file and change by editing it. To run an update by
+hand, open Claude Code in this folder and give it the same prompt.
+
+Note that the routine commits straight to `main` with no review, and
+[GitHub Pages](https://docs.github.com/en/pages) publishes whatever is there.
+
+
+## Deployment
+
+GitHub Pages serves the root of `main` at the domain in `CNAME`. There is no build
+step on the GitHub side.
+
+
+## To-Do
+
+- Fix remaining pagespeed and SEO issues
+- Generate a social share image each week
+- Portraits for hopefuls who don't have one
+
+
+## References
+
+- [Seobility SEO check](https://www.seobility.net/en/seocheck/check/?url=https%3A%2F%2Fwww.project2028.com%2F&mode=standard)
+- [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-project2028-com/vwdhxjb2i4?form_factor=mobile)

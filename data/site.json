@@ -1,0 +1,352 @@
+{
+  "updated": "2026-11-13",
+  "headline": "After a Democratic Wave, the 2028 Field Waits on Newsom, Harris and Ocasio-Cortez",
+  "summary": [
+    "Democrats took control of both chambers of Congress on November 3. A week later a handful of races were still uncalled, but the party had flipped at least seven Senate seats and built its largest House majority in years. Governors Josh Shapiro and JB Pritzker both won re-election, and Sen. Jon Ossoff won a second term in Georgia. Nobody has formally declared for 2028 yet.",
+    "The next few weeks are about decisions. Gov. Gavin Newsom told Turkey's Anadolu news agency on November 12 that he will decide in early January, and he has said he would not run if Kamala Harris does. Harris says she has not decided. Rep. Alexandria Ocasio-Cortez has said she would choose after the midterms between a presidential bid and a Senate run, and Rep. Ro Khanna says he will decide with his family after the holidays.",
+    "This is our first edition, so every number below is a starting estimate rather than a move. Harris leads national polling averages, while prediction markets favor Ossoff, who has said repeatedly that he will not run. We take him mostly at his word and rate him well below his market price. With no declared candidates and the first contest 14 months away, we keep 18 percent on someone not listed here."
+  ],
+  "candidates": [
+    {
+      "slug": "gavin-newsom",
+      "name": "Gavin Newsom",
+      "title": "Governor of California (term ends January 2027)",
+      "status": "undeclared",
+      "odds": 12,
+      "bio": "Newsom was mayor of San Francisco and lieutenant governor before becoming governor in 2019. He is term-limited and leaves office in January 2027. He has built a national profile through confrontations with President Trump and a redistricting push in California.",
+      "outlook": "Newsom has a firm decision date, early January, and a clear public condition: he says he would not run against Harris. That conditional keeps his odds tied to hers. Prediction markets are cooler on him than they were earlier this year, while national polls keep him in second place.",
+      "headlines": [
+        {
+          "text": "Newsom told Turkey's Anadolu news agency he will decide on a 2028 run in early January, after time with his family.",
+          "url": "https://www.yahoo.com/news/politics/articles/newsom-reveals-hell-decide-2028-070817546.html",
+          "source": "Fox News via Yahoo News",
+          "date": "2026-11-13"
+        },
+        {
+          "text": "Newsom told CNN he would not run if Harris does, calling a contest between the two California Democrats mutually destructive.",
+          "url": "https://fox11online.com/news/nation-world/why-experts-see-newsoms-pledge-to-avoid-running-against-harris-as-strategic-move-gavin-newsom-kamala-harris-democrats-2028-presidential-race",
+          "source": "The National News Desk via FOX 11",
+          "date": "2026-09-15"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "So we'll spend the next few weeks with the family and make a decision early January.",
+          "url": "https://www.yahoo.com/news/politics/articles/newsom-reveals-hell-decide-2028-070817546.html",
+          "source": "Fox News via Yahoo News",
+          "date": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "kamala-harris",
+      "name": "Kamala Harris",
+      "title": "Former Vice President of the United States",
+      "status": "undeclared",
+      "odds": 12,
+      "bio": "Harris was California attorney general, a U.S. senator, and vice president from 2021 to 2025. She was the Democratic nominee in 2024. She declined to run for governor of California in 2026 and campaigned for Democrats in the midterms.",
+      "outlook": "Harris leads most national polling averages, in the mid-20s, but prediction markets put her far lower, around 5 percent. She has said she has not decided, and Newsom's pledge not to run against her means her choice shapes the whole field. We rate her level with Newsom because she leads the polls but has not shown she can consolidate donors and party leaders.",
+      "headlines": [
+        {
+          "text": "MS NOW reported that Harris has not settled on another run and is focused on helping Democrats win Congress.",
+          "url": "https://www.ms.now/news/kamala-harris-2028-president-election-midterms",
+          "source": "MS NOW",
+          "date": "2026-10-26"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "I have not decided if I'm going to run again.",
+          "url": "https://www.foxnews.com/politics/harris-keeps-2028-door-open-hits-midterm-campaign-trail-warns-28-wont-matter-without-2026",
+          "source": "Fox News",
+          "date": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "slug": "alexandria-ocasio-cortez",
+      "name": "Alexandria Ocasio-Cortez",
+      "title": "U.S. Representative from New York",
+      "status": "undeclared",
+      "odds": 11,
+      "bio": "Ocasio-Cortez has represented parts of the Bronx and Queens since 2019. She toured the country with Sen. Bernie Sanders in 2025 and has become one of the best-known progressives in the party.",
+      "outlook": "She has said she has not ruled out a presidential run or a Senate challenge to Chuck Schumer, and she is expected to decide after the midterms. Prediction markets rate her second, near 15 percent, and the Intercept reports that a left-wing lane is open with no other star candidate. A Senate run would be a lower-risk path, which holds her odds below the top tier.",
+      "headlines": [
+        {
+          "text": "The Intercept reported that progressives see no obvious alternative to her for a left-wing run, while some strategists say a Senate bid would be easier.",
+          "url": "https://theintercept.com/2026/11/06/democrats-left-presidential-candidate-2028/",
+          "source": "The Intercept",
+          "date": "2026-11-06"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "I haven't ruled out the possibility, and I'm very humbled [by] the tremendous amount of support out there.",
+          "url": "https://www.cnbc.com/2026/08/09/ocasio-cortez-hasnt-ruled-out-running-for-president-or-senate-in-2028.html",
+          "source": "CNBC",
+          "date": "2026-08-09"
+        }
+      ]
+    },
+    {
+      "slug": "pete-buttigieg",
+      "name": "Pete Buttigieg",
+      "title": "Former U.S. Secretary of Transportation",
+      "status": "undeclared",
+      "odds": 10,
+      "bio": "Buttigieg was mayor of South Bend, Indiana, and finished among the top candidates in the 2020 Democratic primary. He served as Transportation Secretary from 2021 to 2025.",
+      "outlook": "Buttigieg is the only major hopeful who has said publicly that he leans toward running. He polls in the low teens nationally and has led some New Hampshire polling, but prediction markets price him near 5 percent, a gap that reflects doubts about his support among Black voters. The early calendar, which opens in South Carolina, is not favorable to him.",
+      "headlines": [
+        {
+          "text": "Buttigieg said on a podcast in August that he is leaning toward running in 2028 but that much is still unknown.",
+          "url": "https://fox11online.com/news/nation-world/pete-buttigieg-is-leaning-towards-running-for-president-in-2028-gavin-newsom-kamala-harris-2020-california",
+          "source": "The National News Desk via FOX 11",
+          "date": "2026-08-03"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "I think I'm more inclined than not, but there's so much we don't know.",
+          "url": "https://fox11online.com/news/nation-world/pete-buttigieg-is-leaning-towards-running-for-president-in-2028-gavin-newsom-kamala-harris-2020-california",
+          "source": "The National News Desk via FOX 11",
+          "date": "2026-08-03"
+        }
+      ]
+    },
+    {
+      "slug": "josh-shapiro",
+      "name": "Josh Shapiro",
+      "title": "Governor of Pennsylvania",
+      "status": "undeclared",
+      "odds": 8,
+      "bio": "Shapiro was Pennsylvania attorney general before winning the governorship in 2022. He was on Kamala Harris's vice presidential shortlist in 2024 and was re-elected on November 3, 2026.",
+      "outlook": "His re-election in a swing state, described by the Pennsylvania Capital-Star as decisive, strengthens an electability case that few rivals can match. He has not said whether he will run, and national polls have him in the mid single digits. We rate him the strongest governor in the field on paper.",
+      "headlines": [
+        {
+          "text": "Shapiro won re-election by a wide margin and used his victory to argue that Democrats must govern responsibly with their new congressional power.",
+          "url": "https://www.yahoo.com/news/politics/articles/gov-josh-shapiro-long-rumored-090102039.html",
+          "source": "Pennsylvania Capital-Star via Yahoo News",
+          "date": "2026-11-11"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "It needs to be a sobering moment for Democrats. We got the keys to the car and now we have to drive it responsibly.",
+          "url": "https://www.yahoo.com/news/politics/articles/gov-josh-shapiro-long-rumored-090102039.html",
+          "source": "Pennsylvania Capital-Star via Yahoo News",
+          "date": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "slug": "jb-pritzker",
+      "name": "JB Pritzker",
+      "title": "Governor of Illinois",
+      "status": "undeclared",
+      "odds": 6,
+      "bio": "Pritzker, a billionaire and heir to the Hyatt hotel fortune, has been governor of Illinois since 2019. He has been a leading Democratic critic of President Trump and has funded abortion-rights and other Democratic causes.",
+      "outlook": "Pritzker won a third term on November 3, the first Illinois governor to do so since 1982, and told supporters they were at the base of another mountain. He has not ruled out a run. Wealth gives him a financial advantage, though his profile outside Illinois is thinner than that of the top contenders.",
+      "headlines": [
+        {
+          "text": "Pritzker won a third term as Illinois governor and spoke in his victory remarks about the next challenge without addressing 2028 directly.",
+          "url": "https://capitolnewsillinois.com/news/pritzker-wins-3rd-term-as-presidential-speculation-builds/",
+          "source": "Capitol News Illinois",
+          "date": "2026-11-03"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We climbed one mountain tonight. But we are sitting at the base of another.",
+          "url": "https://capitolnewsillinois.com/news/pritzker-wins-3rd-term-as-presidential-speculation-builds/",
+          "source": "Capitol News Illinois",
+          "date": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "slug": "andy-beshear",
+      "name": "Andy Beshear",
+      "title": "Governor of Kentucky",
+      "status": "undeclared",
+      "odds": 5,
+      "bio": "Beshear was Kentucky attorney general before winning the governorship in 2019 and was re-elected in 2023, both times in a state that voted heavily for Donald Trump. He chairs the Democratic Governors Association.",
+      "outlook": "Beshear has said he is considering a run and has pitched Democratic governors as the party's face. Prediction markets price him around 4 percent. His red-state record is his main argument. He has not set a date for a decision.",
+      "headlines": [
+        {
+          "text": "The Denver Gazette reported that Beshear and other Democratic governors are positioning themselves as a pragmatic alternative for 2028.",
+          "url": "https://denvergazette.com/2026/09/24/democratic-governors-stake-out-pragmatic-lane-in-2028-field-4/",
+          "source": "Denver Gazette",
+          "date": "2026-09-24"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "I think Democratic governors should be the face of the Democratic Party",
+          "url": "https://denvergazette.com/2026/09/24/democratic-governors-stake-out-pragmatic-lane-in-2028-field-4/",
+          "source": "Denver Gazette",
+          "date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "slug": "mark-kelly",
+      "name": "Mark Kelly",
+      "title": "U.S. Senator from Arizona",
+      "status": "undeclared",
+      "odds": 4,
+      "bio": "Kelly is a retired Navy captain and former astronaut who has represented Arizona in the Senate since 2020. He drew national attention after the Pentagon moved to demote him over a video urging service members to refuse illegal orders, and he sued Defense Secretary Pete Hegseth over it.",
+      "outlook": "Kelly has said he is thinking about running and will not decide until after the midterms, which have now passed. He polls around 7 percent in aggregates. His military record and his clash with the administration are assets, but he lacks a large national base.",
+      "headlines": [
+        {
+          "text": "Kelly said at the Atlantic Festival that he would not decide on a presidential run until after the election and that his family gets a say.",
+          "url": "https://www.kjzz.org/politics/2026-09-21/kelly-says-he-wont-decide-on-a-presidential-run-until-after-the-2026-election",
+          "source": "KJZZ",
+          "date": "2026-09-21"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "I'm not gonna decide until after this election, because I do really believe we need to be focused on this.",
+          "url": "https://www.kjzz.org/politics/2026-09-21/kelly-says-he-wont-decide-on-a-presidential-run-until-after-the-2026-election",
+          "source": "KJZZ",
+          "date": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "slug": "ro-khanna",
+      "name": "Ro Khanna",
+      "title": "U.S. Representative from California",
+      "status": "undeclared",
+      "odds": 3,
+      "bio": "Khanna has represented a Silicon Valley district since 2017 and was a national co-chair of Bernie Sanders's 2020 campaign. He has built a profile on economic nationalism, Medicare for All and opposition to foreign wars.",
+      "outlook": "Allies launched a draft group, Run Ro, on November 5, but Khanna was not directly involved in it, and he says he will decide with his family after the holidays. He has said he is thinking about a run. Progressives are not unified behind him, and he competes for the same lane as Ocasio-Cortez.",
+      "headlines": [
+        {
+          "text": "Allies of Khanna, including former Rep. Jamaal Bowman, launched a draft campaign two days after the midterms.",
+          "url": "https://www.nbcwashington.com/news/politics/ro-khanna-allies-launch-draft-campaign-2028-presidential-race/4178282/",
+          "source": "NBC News via NBC Washington",
+          "date": "2026-11-05"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Whether I run or support someone else is something I will decide with my family after the holidays.",
+          "url": "https://www.nbcwashington.com/news/politics/ro-khanna-allies-launch-draft-campaign-2028-presidential-race/4178282/",
+          "source": "NBC News via NBC Washington",
+          "date": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "slug": "ruben-gallego",
+      "name": "Ruben Gallego",
+      "title": "U.S. Senator from Arizona",
+      "status": "undeclared",
+      "odds": 3,
+      "bio": "Gallego is a Marine Corps veteran who served in the U.S. House from 2015 to 2025 and was elected to the Senate in 2024. He has emphasized working-class voters, including Latino men.",
+      "outlook": "Gallego unveiled a five-part economic plan in October that Semafor and others read as a possible foundation for a campaign. He has not announced a decision. He starts from a low base nationally and shares a home state with Kelly.",
+      "headlines": [
+        {
+          "text": "Gallego released an economic plan that includes a tax on data centers and a robot tax meant to protect workers from automation.",
+          "url": "https://www.kjzz.org/politics/2026-10-16/arizonas-sen-gallego-unveils-economic-plan-aimed-at-wage-stagnation-ai-job-loss",
+          "source": "KJZZ",
+          "date": "2026-10-16"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "So, we don't want to have a tax system that is designed to actually encourage automation.",
+          "url": "https://www.kjzz.org/politics/2026-10-16/arizonas-sen-gallego-unveils-economic-plan-aimed-at-wage-stagnation-ai-job-loss",
+          "source": "KJZZ",
+          "date": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "slug": "jon-ossoff",
+      "name": "Jon Ossoff",
+      "title": "U.S. Senator from Georgia",
+      "status": "undeclared",
+      "odds": 8,
+      "bio": "Jon Ossoff has represented Georgia in the U.S. Senate since 2021 and won a second term on November 3, 2026. A former investigative journalist, he is the youngest sitting Democratic senator.",
+      "outlook": "Prediction markets rank him at or near the top of the field, yet he has said repeatedly that he is not running and pledged at an October debate to serve his full six-year term. We take the pledge seriously and hold him well below his market price, but a swing-state winner this popular with the party stays on the board until the field is set.",
+      "headlines": [
+        {
+          "text": "Asked at a Georgia Senate debate whether he would serve a full term, Ossoff said yes and repeated that he is not running for president.",
+          "url": "https://www.foxnews.com/politics/dem-senator-says-zero-interest-running-president-debate-gop-opponent",
+          "source": "Fox News",
+          "date": "2026-10-14"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "I have zero interest in running for president. I'm not running for president. I'm running for re-election to the Senate.",
+          "url": "https://www.foxnews.com/politics/dem-senator-says-zero-interest-running-president-debate-gop-opponent",
+          "source": "Fox News",
+          "date": "2026-10-14"
+        }
+      ]
+    }
+  ],
+  "field_odds": 18,
+  "results": [
+    {
+      "date": "2026-11-03",
+      "contest": "2026 midterm elections",
+      "summary": "Democrats won control of the House and Senate and a majority of governorships. As of November 10 they had flipped at least seven Senate seats, including Texas, Ohio and North Carolina, with Alaska and Mississippi still uncalled along with 19 House races.",
+      "url": "https://www.270towin.com/news/2026/11/10/uncalled-races-one-week-after-midterm-election_1848.html"
+    },
+    {
+      "date": "2026-11-03",
+      "contest": "Illinois governor",
+      "summary": "JB Pritzker defeated Republican Darren Bailey to win a third term.",
+      "url": "https://capitolnewsillinois.com/news/pritzker-wins-3rd-term-as-presidential-speculation-builds/"
+    },
+    {
+      "date": "2026-08-15",
+      "contest": "DNC approves 2028 nominating calendar",
+      "summary": "The full Democratic National Committee approved by voice vote a calendar that puts South Carolina first, followed by Nevada, New Hampshire, New Mexico, Michigan and Virginia. States that go out of order lose all of their delegates and face a $270,000 fine.",
+      "url": "https://www.washingtonexaminer.com/?p=4685985"
+    }
+  ],
+  "calendar": [
+    {
+      "date": "2027-01-01",
+      "event": "Newsom decision expected",
+      "note": "Newsom says he will decide after spending the next few weeks with his family.",
+      "label": "Early Jan 2027"
+    },
+    {
+      "date": "2028-01-22",
+      "event": "South Carolina primary",
+      "note": "First contest on the DNC calendar."
+    },
+    {
+      "date": "2028-02-01",
+      "event": "Nevada primary"
+    },
+    {
+      "date": "2028-02-08",
+      "event": "New Hampshire primary",
+      "note": "State law requires New Hampshire to go first, which conflicts with the DNC calendar."
+    },
+    {
+      "date": "2028-02-15",
+      "event": "New Mexico primary"
+    },
+    {
+      "date": "2028-02-22",
+      "event": "Michigan primary"
+    },
+    {
+      "date": "2028-02-29",
+      "event": "Virginia primary"
+    },
+    {
+      "date": "2028-03-07",
+      "event": "Super Tuesday"
+    }
+  ],
+  "out": []
+}
