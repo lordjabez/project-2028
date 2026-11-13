@@ -7,12 +7,10 @@ once a week, rewrites the data, rebuilds the page, and pushes it.
 
 The odds on the page are the model's own judgment, not a poll or a market.
 
-
 ## Prerequisites
 
 - [Python](https://www.python.org/downloads/) 3.10 or later - standard library only
 - [uv](https://docs.astral.sh/uv/) - optional, for running the build locally
-
 
 ## Usage
 
@@ -28,7 +26,6 @@ python3 -m http.server
 
 Note that `index.html` is generated, so edit `build.py` or `styles.css` instead.
 
-
 ## Weekly Update
 
 The routine's whole prompt is "follow `UPDATE.md`", so the editorial rules (sourcing,
@@ -38,7 +35,6 @@ hand, open Claude Code in this folder and give it the same prompt.
 Note that the routine commits straight to `main` with no review, and
 [GitHub Pages](https://docs.github.com/en/pages) publishes whatever is there.
 
-
 ## Deployment
 
 GitHub Pages serves the root of `main` at the domain in `CNAME`. There is no build
@@ -47,7 +43,6 @@ step on the GitHub side.
 Traffic is counted with [Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/),
 a cookie-free beacon whose site token is in `build.py`. The site is not proxied
 through Cloudflare, so the beacon is the only Cloudflare piece.
-
 
 ## References
 
