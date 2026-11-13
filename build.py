@@ -21,6 +21,7 @@ DATA = ROOT / "data" / "site.json"
 HISTORY = ROOT / "data" / "history.json"
 PORTRAITS = ROOT / "images" / "portraits"
 SITE_URL = "https://www.project2028.com/"
+CLOUDFLARE_TOKEN = "3e0b3cabee9a4b2a9d79e96f2b17edcf"  # Web Analytics beacon; public by design
 
 STATUSES = {
     "declared": "Declared",
@@ -453,6 +454,7 @@ def render_page(site: Json, history: list[Json]) -> str:
         <p class="footer-credit">Created by <a href="https://www.linkedin.com/in/judsonneer/" rel="noopener">Jud Neer</a>. Source on <a href="https://github.com/lordjabez/project-2028" rel="noopener">GitHub</a>.</p>
       </div>
     </footer>
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "{CLOUDFLARE_TOKEN}"}}'></script>
   </body>
 </html>
 """

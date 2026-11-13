@@ -44,6 +44,10 @@ Note that the routine commits straight to `main` with no review, and
 GitHub Pages serves the root of `main` at the domain in `CNAME`. There is no build
 step on the GitHub side.
 
+Traffic is counted with [Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/),
+a cookie-free beacon whose site token is in `build.py`. The site is not proxied
+through Cloudflare, so the beacon is the only Cloudflare piece.
+
 
 ## References
 
