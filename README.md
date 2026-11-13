@@ -45,13 +45,6 @@ GitHub Pages serves the root of `main` at the domain in `CNAME`. There is no bui
 step on the GitHub side.
 
 
-## To-Do
-
-- Fix remaining pagespeed and SEO issues
-- Generate a social share image each week
-- Portraits for hopefuls who don't have one
-
-
 ## References
 
 - [Seobility SEO check](https://www.seobility.net/en/seocheck/check/?url=https%3A%2F%2Fwww.project2028.com%2F&mode=standard)
