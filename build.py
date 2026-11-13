@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render index.html and sitemap.xml from data/site.json.
 
-Standard library only. Run with `python3 build.py` (or `uv run build.py`).
+Standard library only. Run with `uv run build.py`.
 Each run records the current odds in data/history.json, keyed by the
 `updated` date, so the page can show week-over-week movement.
 """

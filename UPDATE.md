@@ -118,7 +118,7 @@ blocked, skip it.
 
 ## 4. Build and check
 
-1. Run `python3 build.py`. Fix anything it rejects.
+1. Run `uv run build.py`. Fix anything it rejects.
 2. Read `git diff` and check your own work: do the odds moves match the
    news, does every claim trace to a source, does anything read as unfair
    to a candidate?
