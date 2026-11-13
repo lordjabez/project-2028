@@ -110,7 +110,11 @@ These are real people and the page is public.
 A candidate without a file at `images/portraits/<slug>.webp` (or `.jpg`,
 `.png`) gets a monogram, which is fine. To add a portrait, use only a
 public-domain or freely licensed photo from Wikimedia Commons, around 640
-pixels wide and under 100 KB. If the download is blocked, skip it.
+pixels wide and under 100 KB. Prefer public domain (official government
+portraits). If the license requires attribution (CC BY, CC BY-SA), add a
+`photo_credit` to the candidate with the `author` and `license` exactly as
+Commons lists them and the Commons file page as `url`. If the download is
+blocked, skip it.
 
 ## 4. Build and check
 

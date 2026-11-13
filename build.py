@@ -76,6 +76,11 @@ def validate(site: Json) -> None:
             errors.append(f"{who}: `status` must be one of {sorted(STATUSES)}")
         if not isinstance(c.get("odds"), (int, float)) or c["odds"] <= 0:
             errors.append(f"{who}: `odds` must be a positive number")
+        credit = c.get("photo_credit")
+        if credit is not None and not (
+            credit.get("author") and credit.get("license") and is_url(credit.get("url"))
+        ):
+            errors.append(f"{who}: `photo_credit` needs `author`, `license`, and an https `url`")
         for kind in ("headlines", "quotes"):
             for item in c.get(kind) or []:
                 if not item.get("text"):
@@ -276,6 +281,12 @@ def render_card(rank: int, c: Json) -> str:
         sections.append(
             '<div class="card-section"><h3 class="section-title">In Their Words</h3>'
             f'<div class="quotes-container">{render_sourced(c["quotes"], quote=True)}</div></div>'
+        )
+    credit = c.get("photo_credit")
+    if src and credit:
+        sections.append(
+            f'<p class="photo-credit">Photo: <a href="{escape(credit["url"], quote=True)}" '
+            f'rel="noopener nofollow">{escape(credit["author"])}</a>, {escape(credit["license"])}</p>'
         )
     return f"""
           <article class="card" id="{c["slug"]}">

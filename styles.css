@@ -223,6 +223,16 @@ main {
     line-height: 1.75;
 }
 
+.photo-credit {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.photo-credit a {
+    color: inherit;
+}
+
 /* Lists */
 .card-section ul {
     list-style: disc;
