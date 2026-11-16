@@ -15,5 +15,24 @@
       "ruben-gallego": 3,
       "_field": 18
     }
+  },
+  {
+    "date": "2026-11-16",
+    "odds": {
+      "gavin-newsom": 12,
+      "kamala-harris": 12,
+      "alexandria-ocasio-cortez": 11,
+      "pete-buttigieg": 10,
+      "josh-shapiro": 9,
+      "jon-ossoff": 8,
+      "jb-pritzker": 6,
+      "andy-beshear": 5,
+      "mark-kelly": 4,
+      "ro-khanna": 3,
+      "ruben-gallego": 2,
+      "cory-booker": 2,
+      "elissa-slotkin": 1,
+      "_field": 15
+    }
   }
 ]
