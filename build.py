@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = []
+# ///
 """Render index.html and sitemap.xml from data/site.json.
 
 Standard library only. Run with `uv run build.py`.
