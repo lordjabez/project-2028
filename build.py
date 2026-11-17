@@ -508,6 +508,8 @@ def render_layout(
     <meta property="og:image:height" content="{height}">
     <meta property="og:image:alt" content="{escape(alt, quote=True)}">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="/styles.css">
