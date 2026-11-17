@@ -78,6 +78,8 @@ These are real people and the page is public.
   If you cannot confirm it, do not use it.
 - Do not publish notes to yourself. If you could not verify something,
   leave it out instead of saying so on the page.
+- The `headline` and `summary` are archived at `/archive/<date>/` and
+  stay up permanently, so write them to stand on their own later.
 - Write `text` for headlines in your own words; do not copy the outlet's
   headline.
 - Prefer items from the past month. Drop anything stale once newer
@@ -107,18 +109,24 @@ These are real people and the page is public.
 
 ### Portraits
 
-A candidate without a file at `images/portraits/<slug>.webp` (or `.jpg`,
-`.png`) gets a monogram, which is fine. To add a portrait, use only a
-public-domain or freely licensed photo from Wikimedia Commons, around 640
-pixels wide and under 100 KB. Prefer public domain (official government
-portraits). If the license requires attribution (CC BY, CC BY-SA), add a
-`photo_credit` to the candidate with the `author` and `license` exactly as
-Commons lists them and the Commons file page as `url`. If the download is
-blocked, skip it.
+A candidate without a file at `images/portraits/<slug>.webp` gets a
+monogram, which is fine. To add a portrait, use only a public-domain or
+freely licensed photo from Wikimedia Commons. Prefer public domain
+(official government portraits). Download it to a temporary path outside
+the repo, then run `uv run tools/portrait.py <downloaded-file> <slug>`,
+which crops it to 4:5 and writes both the 400x500 portrait and the
+thumbnail used in the race chart. Delete the download afterward. If the
+license requires attribution (CC BY, CC BY-SA), add a `photo_credit` to
+the candidate with the `author` and `license` exactly as Commons lists
+them and the Commons file page as `url`. If the download or the script
+fails, skip the portrait.
 
 ## 4. Build and check
 
-1. Run `uv run build.py`. Fix anything it rejects.
+1. Run `uv run build.py`. Fix anything it rejects. Besides `index.html`
+   and `sitemap.xml`, the build regenerates a page per candidate under
+   `candidates/` and a permanent archive page per edition under
+   `archive/`. Commit all of it; never edit those files by hand.
 2. Read `git diff` and check your own work: do the odds moves match the
    news, does every claim trace to a source, does anything read as unfair
    to a candidate?

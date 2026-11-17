@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-13",
+    "headline": "After a Democratic Wave, the 2028 Field Waits on Newsom, Harris and Ocasio-Cortez",
+    "summary": [
+      "Democrats took control of both chambers of Congress on November 3. A week later a handful of races were still uncalled, but the party had flipped at least seven Senate seats and built its largest House majority in years. Governors Josh Shapiro and JB Pritzker both won re-election, and Sen. Jon Ossoff won a second term in Georgia. Nobody has formally declared for 2028 yet.",
+      "The next few weeks are about decisions. Gov. Gavin Newsom told Turkey's Anadolu news agency on November 12 that he will decide in early January, and he has said he would not run if Kamala Harris does. Harris says she has not decided. Rep. Alexandria Ocasio-Cortez has said she would choose after the midterms between a presidential bid and a Senate run, and Rep. Ro Khanna says he will decide with his family after the holidays.",
+      "This is our first edition, so every number below is a starting estimate rather than a move. Harris leads national polling averages, while prediction markets favor Ossoff, who has said repeatedly that he will not run. We take him mostly at his word and rate him well below his market price. With no declared candidates and the first contest 14 months away, we keep 18 percent on someone not listed here."
+    ],
     "odds": {
       "gavin-newsom": 12,
       "kamala-harris": 12,
@@ -14,10 +20,29 @@
       "ro-khanna": 3,
       "ruben-gallego": 3,
       "_field": 18
+    },
+    "names": {
+      "gavin-newsom": "Gavin Newsom",
+      "kamala-harris": "Kamala Harris",
+      "alexandria-ocasio-cortez": "Alexandria Ocasio-Cortez",
+      "pete-buttigieg": "Pete Buttigieg",
+      "josh-shapiro": "Josh Shapiro",
+      "jon-ossoff": "Jon Ossoff",
+      "jb-pritzker": "JB Pritzker",
+      "andy-beshear": "Andy Beshear",
+      "mark-kelly": "Mark Kelly",
+      "ro-khanna": "Ro Khanna",
+      "ruben-gallego": "Ruben Gallego"
     }
   },
   {
     "date": "2026-11-16",
+    "headline": "Denver Conference Previews the 2028 Field as Shapiro Steps Forward and Van Hollen Steps Aside",
+    "summary": [
+      "Ten days after the midterms, would-be 2028 candidates tested their messages at the What's Next conference in Denver on November 13. Gov. Josh Shapiro, whom CNN describes as expected to run, gave a campaign-style speech and said he would be doing his part. Sen. Elissa Slotkin said she is seriously considering a run, Sen. Cory Booker said he is giving it hard thought, and Rep. Ro Khanna said the reception made him more likely to consider it. Nobody has formally declared.",
+      "Sen. Chris Van Hollen, who had previously expressed interest in a presidential run, told reporters he is not running in 2028 and is instead challenging Chuck Schumer for Senate Democratic leader in a December 1 vote. Pete Buttigieg said he would have no news on 2028 anytime soon, and Sen. Ruben Gallego said his three young children weigh heavily on his decision.",
+      "Odds moves are small this week. Shapiro rises a point on his post-election momentum, and Gallego slips a point. We add Booker and Slotkin to the board, moving their chances out of the unlisted field, which falls from 18 to 15 percent. Ossoff won a straw poll of 990 activists at Crooked Media's conference on November 7 and still leads prediction markets near 27 percent, but he says he is not running, so we hold him at 8. A CNN/SSRS poll taken before the midterms found Democrats about equally excited by Harris, Ocasio-Cortez and Buttigieg."
+    ],
     "odds": {
       "gavin-newsom": 12,
       "kamala-harris": 12,
@@ -33,6 +58,21 @@
       "cory-booker": 2,
       "elissa-slotkin": 1,
       "_field": 15
+    },
+    "names": {
+      "gavin-newsom": "Gavin Newsom",
+      "kamala-harris": "Kamala Harris",
+      "alexandria-ocasio-cortez": "Alexandria Ocasio-Cortez",
+      "pete-buttigieg": "Pete Buttigieg",
+      "josh-shapiro": "Josh Shapiro",
+      "jon-ossoff": "Jon Ossoff",
+      "jb-pritzker": "JB Pritzker",
+      "andy-beshear": "Andy Beshear",
+      "mark-kelly": "Mark Kelly",
+      "ro-khanna": "Ro Khanna",
+      "ruben-gallego": "Ruben Gallego",
+      "cory-booker": "Cory Booker",
+      "elissa-slotkin": "Elissa Slotkin"
     }
   }
 ]

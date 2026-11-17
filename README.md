@@ -9,13 +9,15 @@ The odds on the page are the model's own judgment, not a poll or a market.
 
 ## Prerequisites
 
-- [Python](https://www.python.org/downloads/) 3.10 or later - standard library only
+- [Python](https://www.python.org/downloads/) 3.12 or later - standard library only
 - [uv](https://docs.astral.sh/uv/) - optional, for running the build locally
 
 ## Usage
 
 Everything on the page comes from `data/site.json`. The build validates it, records
-the week's odds in `data/history.json`, and writes `index.html` and `sitemap.xml`:
+the week's odds and brief in `data/history.json`, and writes `index.html`, a page per
+candidate under `candidates/`, a permanent page per edition under `archive/`, and
+`sitemap.xml`:
 
 ```bash
 uv run build.py
@@ -24,7 +26,10 @@ uv run build.py
 python3 -m http.server
 ```
 
-Note that `index.html` is generated, so edit `build.py` or `styles.css` instead.
+Note that all of those pages are generated, so edit `build.py` or `styles.css` instead.
+
+To add or replace a portrait, run `uv run tools/portrait.py <source-image> <slug>`. It
+crops to 4:5 and writes the card portrait and the race-chart thumbnail.
 
 ## Weekly Update
 
