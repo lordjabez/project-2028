@@ -22,10 +22,11 @@ import math
 import re
 import shutil
 import sys
-from datetime import date
+from datetime import date, datetime
 from html import escape
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data" / "site.json"
@@ -37,6 +38,7 @@ CANDIDATES_DIR = ROOT / "candidates"
 ARCHIVE_DIR = ROOT / "archive"
 OG_IMAGE = ("/images/og.png", 1200, 630)
 PORTRAIT_SIZE = (400, 500)  # portraits are 4:5
+SITE_TZ = ZoneInfo("America/Los_Angeles")  # editions are dated in Pacific time
 SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 CLOUDFLARE_TOKEN = "3e0b3cabee9a4b2a9d79e96f2b17edcf"  # Web Analytics beacon; public by design
 
@@ -184,6 +186,14 @@ def candidate_path(slug: str) -> str:
 
 def archive_path(iso: str) -> str:
     return f"/archive/{iso}/"
+
+
+def schema_datetime(iso: str) -> str:
+    """Structured-data timestamp for a YYYY-MM-DD date: local midnight with its UTC offset.
+
+    Google rejects bare dates in dateModified and datePublished, so emit full ISO 8601.
+    """
+    return datetime.combine(date.fromisoformat(iso), datetime.min.time(), SITE_TZ).isoformat()
 
 
 def clip(text: str, limit: int = 160) -> str:
@@ -551,8 +561,8 @@ def news_article(snapshot: Json, path: str) -> Json:
         "headline": snapshot["headline"],
         "description": clip(snapshot["summary"][0]),
         "url": absolute(path),
-        "datePublished": snapshot["date"],
-        "dateModified": snapshot["date"],
+        "datePublished": schema_datetime(snapshot["date"]),
+        "dateModified": schema_datetime(snapshot["date"]),
         "image": [absolute(OG_IMAGE[0])],
         "author": ORGANIZATION,
         "publisher": ORGANIZATION,
@@ -575,7 +585,7 @@ def render_page(site: Json, history: list[Json]) -> str:
                 "name": SITE_NAME,
                 "url": SITE_URL,
                 "description": description,
-                "dateModified": site["updated"],
+                "dateModified": schema_datetime(site["updated"]),
                 "publisher": ORGANIZATION,
             },
             {
@@ -715,7 +725,7 @@ def render_candidate(rank: int, c: Json, site: Json, history: list[Json]) -> str
                 "@type": "ProfilePage",
                 "url": absolute(path),
                 "name": f"{name} 2028",
-                "dateModified": site["updated"],
+                "dateModified": schema_datetime(site["updated"]),
                 "mainEntity": person,
             },
             breadcrumbs(trail),
@@ -826,7 +836,7 @@ def render_archive_index(editions: list[Json], site: Json) -> str:
                 "name": f"Past Editions | {SITE_NAME}",
                 "url": absolute("/archive/"),
                 "description": description,
-                "dateModified": site["updated"],
+                "dateModified": schema_datetime(site["updated"]),
             },
             breadcrumbs(trail),
         ],
