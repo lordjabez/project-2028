@@ -74,5 +74,45 @@
       "cory-booker": "Cory Booker",
       "elissa-slotkin": "Elissa Slotkin"
     }
+  },
+  {
+    "date": "2026-11-23",
+    "headline": "DNC Schedules 12 Debates With a Dark-Money Pledge as Ossoff Tops a National Poll Despite Saying He Won't Run",
+    "summary": [
+      "The Democratic National Committee set the rules of the road for 2028 on November 23. It will hold 12 primary debates, five in 2027, the first two in June and July, and seven in 2028, six of them in the early-voting states. Debates may be split across two nights with no more than 20 qualifying candidates, chosen by polling and grassroots fundraising. Candidates must also sign a pledge to denounce super PAC and dark-money spending that boosts them or attacks a Democratic rival, a largely symbolic rule the party cannot force outside groups to obey. Dates and media partners for the first two debates will be announced in January.",
+      "Nobody declared this week, but the groundwork continued. Allies of Pete Buttigieg launched Team Pete PAC to urge him to run, Cory Booker made his fourth South Carolina trip of the year and told reporters he is giving a run a lot of thought, and Gavin Newsom spent several days in Washington pitching AI regulation as an issue no 2028 candidate can ignore. Alexandria Ocasio-Cortez filed paperwork for a House re-election bid, which does not settle her choice, and said Democrats should focus on getting results. Sen. Bernie Sanders, 85, said he probably will not run.",
+      "An Emerson College poll taken November 14 to 16 put Jon Ossoff first among Democratic primary voters at 17 percent, narrowly ahead of Kamala Harris at 16, Ocasio-Cortez at 15 and Buttigieg at 14, with Newsom at 11. Ossoff still says he is not running, so we hold him at 8. Odds moves are small: Booker rises a point to 3 on his South Carolina push, and Newsom slips a point to 11 as his polling has fallen from the mid-20s early this year to the low teens. The unlisted field holds at 15 percent."
+    ],
+    "odds": {
+      "kamala-harris": 12,
+      "gavin-newsom": 11,
+      "alexandria-ocasio-cortez": 11,
+      "pete-buttigieg": 10,
+      "josh-shapiro": 9,
+      "jon-ossoff": 8,
+      "jb-pritzker": 6,
+      "andy-beshear": 5,
+      "mark-kelly": 4,
+      "ro-khanna": 3,
+      "cory-booker": 3,
+      "ruben-gallego": 2,
+      "elissa-slotkin": 1,
+      "_field": 15
+    },
+    "names": {
+      "kamala-harris": "Kamala Harris",
+      "gavin-newsom": "Gavin Newsom",
+      "alexandria-ocasio-cortez": "Alexandria Ocasio-Cortez",
+      "pete-buttigieg": "Pete Buttigieg",
+      "josh-shapiro": "Josh Shapiro",
+      "jon-ossoff": "Jon Ossoff",
+      "jb-pritzker": "JB Pritzker",
+      "andy-beshear": "Andy Beshear",
+      "mark-kelly": "Mark Kelly",
+      "ro-khanna": "Ro Khanna",
+      "cory-booker": "Cory Booker",
+      "ruben-gallego": "Ruben Gallego",
+      "elissa-slotkin": "Elissa Slotkin"
+    }
   }
 ]

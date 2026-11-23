@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-16",
-  "headline": "Denver Conference Previews the 2028 Field as Shapiro Steps Forward and Van Hollen Steps Aside",
+  "updated": "2026-11-23",
+  "headline": "DNC Schedules 12 Debates With a Dark-Money Pledge as Ossoff Tops a National Poll Despite Saying He Won't Run",
   "summary": [
-    "Ten days after the midterms, would-be 2028 candidates tested their messages at the What's Next conference in Denver on November 13. Gov. Josh Shapiro, whom CNN describes as expected to run, gave a campaign-style speech and said he would be doing his part. Sen. Elissa Slotkin said she is seriously considering a run, Sen. Cory Booker said he is giving it hard thought, and Rep. Ro Khanna said the reception made him more likely to consider it. Nobody has formally declared.",
-    "Sen. Chris Van Hollen, who had previously expressed interest in a presidential run, told reporters he is not running in 2028 and is instead challenging Chuck Schumer for Senate Democratic leader in a December 1 vote. Pete Buttigieg said he would have no news on 2028 anytime soon, and Sen. Ruben Gallego said his three young children weigh heavily on his decision.",
-    "Odds moves are small this week. Shapiro rises a point on his post-election momentum, and Gallego slips a point. We add Booker and Slotkin to the board, moving their chances out of the unlisted field, which falls from 18 to 15 percent. Ossoff won a straw poll of 990 activists at Crooked Media's conference on November 7 and still leads prediction markets near 27 percent, but he says he is not running, so we hold him at 8. A CNN/SSRS poll taken before the midterms found Democrats about equally excited by Harris, Ocasio-Cortez and Buttigieg."
+    "The Democratic National Committee set the rules of the road for 2028 on November 23. It will hold 12 primary debates, five in 2027, the first two in June and July, and seven in 2028, six of them in the early-voting states. Debates may be split across two nights with no more than 20 qualifying candidates, chosen by polling and grassroots fundraising. Candidates must also sign a pledge to denounce super PAC and dark-money spending that boosts them or attacks a Democratic rival, a largely symbolic rule the party cannot force outside groups to obey. Dates and media partners for the first two debates will be announced in January.",
+    "Nobody declared this week, but the groundwork continued. Allies of Pete Buttigieg launched Team Pete PAC to urge him to run, Cory Booker made his fourth South Carolina trip of the year and told reporters he is giving a run a lot of thought, and Gavin Newsom spent several days in Washington pitching AI regulation as an issue no 2028 candidate can ignore. Alexandria Ocasio-Cortez filed paperwork for a House re-election bid, which does not settle her choice, and said Democrats should focus on getting results. Sen. Bernie Sanders, 85, said he probably will not run.",
+    "An Emerson College poll taken November 14 to 16 put Jon Ossoff first among Democratic primary voters at 17 percent, narrowly ahead of Kamala Harris at 16, Ocasio-Cortez at 15 and Buttigieg at 14, with Newsom at 11. Ossoff still says he is not running, so we hold him at 8. Odds moves are small: Booker rises a point to 3 on his South Carolina push, and Newsom slips a point to 11 as his polling has fallen from the mid-20s early this year to the low teens. The unlisted field holds at 15 percent."
   ],
   "candidates": [
     {
@@ -12,10 +12,16 @@
       "name": "Gavin Newsom",
       "title": "Governor of California (term ends January 2027)",
       "status": "undeclared",
-      "odds": 12,
+      "odds": 11,
       "bio": "Newsom was mayor of San Francisco and lieutenant governor before becoming governor in 2019. He is term-limited and leaves office in January 2027. He has built a national profile through confrontations with President Trump and a redistricting push in California.",
-      "outlook": "Newsom has a firm decision date, early January, and a clear public condition: he says he would not run against Harris. That conditional keeps his odds tied to hers. Prediction markets are cooler on him than they were earlier this year, while national polls keep him in second place.",
+      "outlook": "Down one point. Newsom has a firm decision date, early January, and a clear public condition: he says he would not run against Harris. His trip to Washington this week to promote AI regulation looked like groundwork for a campaign, but one polling average shows his support among Democrats sliding from 25 percent in January to 13 percent, and he drew 11 percent in Emerson's November poll, behind Ossoff, Harris, Ocasio-Cortez and Buttigieg.",
       "headlines": [
+        {
+          "text": "Newsom spent several days meeting lawmakers in Washington and unveiled California AI proposals, saying AI regulation should be table stakes for any serious 2028 candidate while adding that he has not decided on a run.",
+          "url": "https://www.washingtonexaminer.com/news/campaigns/presidential/4807784/newsom-says-ai-regulation-should-be-table-stakes-for-any-serious-2028-candidate/",
+          "source": "Washington Examiner",
+          "date": "2026-11-18"
+        },
         {
           "text": "Newsom told Turkey's Anadolu news agency he will decide on a 2028 run in early January, after time with his family.",
           "url": "https://www.yahoo.com/news/politics/articles/newsom-reveals-hell-decide-2028-070817546.html",
@@ -45,8 +51,14 @@
       "status": "undeclared",
       "odds": 12,
       "bio": "Harris was California attorney general, a U.S. senator, and vice president from 2021 to 2025. She was the Democratic nominee in 2024. She declined to run for governor of California in 2026 and campaigned for Democrats in the midterms.",
-      "outlook": "Harris leads most national polling averages, in the mid-20s, and 27 percent of Democrats in a pre-midterm CNN/SSRS poll said they would be excited to support her, tied for the most. Prediction markets put her near 5 percent, and she finished far back in the Crooked Con activist straw poll. She has not decided, and Newsom's pledge not to run against her means her choice shapes the whole field.",
+      "outlook": "Harris leads the national polling averages, and Emerson's mid-November poll had her second at 16 percent in a closed list, a point behind Ossoff. Prediction markets put her near 5 percent, and she finished far back in the Crooked Con activist straw poll. She has not decided, and Newsom's pledge not to run against her means her choice shapes the whole field.",
       "headlines": [
+        {
+          "text": "Emerson College's mid-November national poll found Harris at 16 percent among Democratic primary voters when given a list, second to Ossoff, but at 6 percent when respondents had to name a candidate unprompted.",
+          "url": "https://emersoncollegepolling.com/national-poll-rubio-leads-2028-gop-nomination-contest-ossoff-rises-among-democrats/",
+          "source": "Emerson College Polling",
+          "date": "2026-11-19"
+        },
         {
           "text": "Harris told the Associated Press the day after the midterms that she wants to help steer the party whether or not she runs again.",
           "url": "https://whyy.org/articles/election-2026-midterms-2028-presidential-contenders/",
@@ -58,12 +70,6 @@
           "url": "https://www.cnn.com/2026/11/11/politics/2028-poll-presidential-candidates",
           "source": "CNN",
           "date": "2026-11-11"
-        },
-        {
-          "text": "MS NOW reported that Harris has not settled on another run and is focused on helping Democrats win Congress.",
-          "url": "https://www.ms.now/news/kamala-harris-2028-president-election-midterms",
-          "source": "MS NOW",
-          "date": "2026-10-26"
         }
       ],
       "quotes": [
@@ -88,28 +94,34 @@
       "status": "undeclared",
       "odds": 11,
       "bio": "Ocasio-Cortez has represented parts of the Bronx and Queens since 2019. She toured the country with Sen. Bernie Sanders in 2025 and has become one of the best-known progressives in the party.",
-      "outlook": "She has said she would decide after the midterms between a presidential run and a Senate challenge to Chuck Schumer, and she has not yet announced a choice. Prediction markets rate her second, near 15 percent, and the New York City chapter of the Democratic Socialists of America voted on November 14 to urge her to run. A Senate run would be a lower-risk path, which holds her odds below the top tier.",
+      "outlook": "She has said she would decide after the midterms between a presidential run and a Senate challenge to Chuck Schumer, and she has not announced a choice. She filed paperwork for a House re-election bid, which keeps that option open without ruling out the others. She polled 15 percent in Emerson's November survey and second in prediction markets near 15 percent, but a Senate run remains a lower-risk path, which holds her odds below the top tier.",
       "headlines": [
+        {
+          "text": "Asked by Fox News Digital about a presidential run, Ocasio-Cortez said Democrats should focus on getting results, and said she hopes to work with President Trump on a congressional stock trading ban and Medicaid.",
+          "url": "https://www.yahoo.com/news/politics/articles/aoc-leaves-door-open-2028-145229834.html",
+          "source": "Fox News via Yahoo News",
+          "date": "2026-11-19"
+        },
+        {
+          "text": "Ocasio-Cortez registered a 2028 re-election campaign for her House seat with the FEC, a filing that does not rule out a presidential or Senate run.",
+          "url": "https://www.newsweek.com/aoc-files-reelection-socialists-push-run-president-12725680",
+          "source": "Newsweek",
+          "date": "2026-11-18"
+        },
         {
           "text": "The New York City chapter of the Democratic Socialists of America voted 291 to 123 to encourage her to run for president, though a sizable minority dissented.",
           "url": "https://nationalsecurityjournal.org/democrats-have-a-problem-new-yorks-democratic-socialists-just-voted-291-to-123-to-draft-aoc-for-president-in-2028/",
           "source": "National Security Journal",
           "date": "2026-11-16"
-        },
-        {
-          "text": "In a pre-midterm CNN/SSRS poll, 27 percent of Democrats said they would be excited to support her, tied with Harris for the most.",
-          "url": "https://www.cnn.com/2026/11/11/politics/2028-poll-presidential-candidates",
-          "source": "CNN",
-          "date": "2026-11-11"
-        },
-        {
-          "text": "The Intercept reported that progressives see no obvious alternative to her for a left-wing run, while some strategists say a Senate bid would be easier.",
-          "url": "https://theintercept.com/2026/11/06/democrats-left-presidential-candidate-2028/",
-          "source": "The Intercept",
-          "date": "2026-11-06"
         }
       ],
       "quotes": [
+        {
+          "text": "I think, right now, this election just happened. We got to work on getting results for people.",
+          "url": "https://www.yahoo.com/news/politics/articles/aoc-leaves-door-open-2028-145229834.html",
+          "source": "Fox News via Yahoo News",
+          "date": "2026-11-19"
+        },
         {
           "text": "I haven't ruled out the possibility, and I'm very humbled [by] the tremendous amount of support out there.",
           "url": "https://www.cnbc.com/2026/08/09/ocasio-cortez-hasnt-ruled-out-running-for-president-or-senate-in-2028.html",
@@ -125,8 +137,14 @@
       "status": "undeclared",
       "odds": 10,
       "bio": "Buttigieg was mayor of South Bend, Indiana, and finished among the top candidates in the 2020 Democratic primary. He served as Transportation Secretary from 2021 to 2025.",
-      "outlook": "Buttigieg has said he leans toward running, but he told reporters in Denver he would have no news on 2028 anytime soon. He placed third in the Crooked Con straw poll and drew excitement from 26 percent of Democrats in the CNN/SSRS poll. Prediction markets price him near 5 percent, reflecting doubts about his support among Black voters ahead of a calendar that opens in South Carolina.",
+      "outlook": "Buttigieg has said he leans toward running but will not announce anything soon. Former aides launched Team Pete PAC this week to urge him in, and he drew 14 percent in Emerson's November poll, fourth in a tight top group. Prediction markets price him near 5 percent, reflecting doubts about his support among Black voters ahead of a calendar that opens in South Carolina.",
       "headlines": [
+        {
+          "text": "Allies led by his former Transportation Department chief of staff, Mohsin Syed, and former DNC-chair campaign manager Jennifer Holdsworth launched Team Pete PAC to urge Buttigieg to run.",
+          "url": "https://thenationaldesk.com/news/nation-world/allies-of-pete-buttigieg-launch-movement-to-get-him-to-run-for-president-2028-gavin-newsom-kamala-harris-dnc-rrt",
+          "source": "The National News Desk",
+          "date": "2026-11-19"
+        },
         {
           "text": "Buttigieg told reporters at a Democratic conference in Denver that he would not have news on a 2028 run anytime soon, though he has not ruled one out.",
           "url": "https://www.foxnews.com/politics/dems-descend-denver-size-2028-who-wants-race",
@@ -236,6 +254,12 @@
           "url": "https://whyy.org/articles/election-2026-midterms-2028-presidential-contenders/",
           "source": "Associated Press via WHYY",
           "date": "2026-11-05"
+        },
+        {
+          "text": "Beshear drew 7 percent in Emerson College's mid-November national poll of Democratic primary voters, sixth in the list and ahead of Shapiro and Pritzker.",
+          "url": "https://emersoncollegepolling.com/national-poll-rubio-leads-2028-gop-nomination-contest-ossoff-rises-among-democrats/",
+          "source": "Emerson College Polling",
+          "date": "2026-11-19"
         },
         {
           "text": "The Denver Gazette reported that Beshear and other Democratic governors are positioning themselves as a pragmatic alternative for 2028.",
@@ -365,8 +389,14 @@
       "status": "undeclared",
       "odds": 8,
       "bio": "Jon Ossoff has represented Georgia in the U.S. Senate since 2021 and won a second term on November 3, 2026. A former investigative journalist, he is the youngest sitting Democratic senator.",
-      "outlook": "Prediction markets rank him first, near 27 percent, and he won the Crooked Con activist straw poll with 38 percent. But he has said repeatedly that he is not running and pledged at an October debate to serve his full six-year term. We take the pledge seriously and hold him well below his market price, but a swing-state winner this popular with the party stays on the board until the field is set.",
+      "outlook": "Ossoff topped Emerson's November national poll at 17 percent, ranks first in prediction markets and won the Crooked Con straw poll. But he has said repeatedly that he is not running and pledged at an October debate to serve his full six-year term. We take the pledge seriously and hold him well below his polling and market price, but a swing-state winner this popular with the party stays on the board until the field is set.",
       "headlines": [
+        {
+          "text": "An Emerson College national poll taken November 14 to 16 found Ossoff leading the Democratic field at 17 percent, both unprompted and from a list, despite his statements that he is not running.",
+          "url": "https://emersoncollegepolling.com/national-poll-rubio-leads-2028-gop-nomination-contest-ossoff-rises-among-democrats/",
+          "source": "Emerson College Polling",
+          "date": "2026-11-19"
+        },
         {
           "text": "Ossoff was the first choice of 38.4 percent of 990 attendees in a straw poll at Crooked Con, Crooked Media's progressive conference, ahead of Ocasio-Cortez and Buttigieg.",
           "url": "https://www.washingtonexaminer.com/news/4796630/jon-ossoff-wins-2028-straw-poll-at-progressive-conference/",
@@ -394,10 +424,16 @@
       "name": "Cory Booker",
       "title": "U.S. Senator from New Jersey",
       "status": "undeclared",
-      "odds": 2,
+      "odds": 3,
       "bio": "Booker was mayor of Newark before winning a Senate seat in 2013, and he ran for the Democratic presidential nomination in 2020. He won re-election to a third full term on November 3, 2026.",
-      "outlook": "New to the board this week. Booker told Fox News he is giving a 2028 run a lot of hard thought, and the Associated Press reports he starts the cycle with more than $20 million in his federal campaign account. His 2020 campaign ended before the first votes, and prediction markets give him under 1 percent.",
+      "outlook": "Up one point. Booker made his fourth South Carolina trip of the year, keynoting the Charleston NAACP gala and visiting Mother Emanuel, and told reporters afterward he is giving a run a lot of thought. South Carolina votes first, and he starts with more than $20 million in his federal campaign account. His 2020 campaign ended before the first votes, and prediction markets give him under 1 percent.",
       "headlines": [
+        {
+          "text": "Booker told the Charleston NAACP's Freedom Fund Gala that a blue wave is not enough and called for an American change, on his fourth trip to South Carolina this year.",
+          "url": "https://www.yahoo.com/news/politics/articles/nj-us-sen-booker-urges-100000533.html",
+          "source": "Post and Courier via Yahoo News",
+          "date": "2026-11-21"
+        },
         {
           "text": "Booker said in Denver that he is giving a 2028 campaign serious thought while focusing on what he calls an American renewal.",
           "url": "https://www.foxnews.com/politics/dems-descend-denver-size-2028-who-wants-race",
@@ -412,6 +448,12 @@
         }
       ],
       "quotes": [
+        {
+          "text": "This is a moment for us to redeem the dream of America.",
+          "url": "https://www.yahoo.com/news/politics/articles/nj-us-sen-booker-urges-100000533.html",
+          "source": "Post and Courier via Yahoo News",
+          "date": "2026-11-21"
+        },
         {
           "text": "The gap I’m concerned about is not the gap between left and right anymore. It’s a gap between the American people and the American dream, and I want to see that gap close",
           "url": "https://www.foxnews.com/politics/dems-descend-denver-size-2028-who-wants-race",
@@ -449,6 +491,12 @@
   "field_odds": 15,
   "results": [
     {
+      "date": "2026-11-23",
+      "contest": "DNC sets 2028 debate rules",
+      "summary": "The Democratic National Committee announced 12 primary debates, five in 2027 beginning in June and seven in 2028, six of them in early-voting states. Up to 20 candidates may qualify across two nights based on polling and grassroots fundraising, and each must sign a pledge to denounce super PAC and dark-money spending in the primary.",
+      "url": "https://abcnews.com/Politics/democrats-holding-12-debates-2028-cycle-requiring-candidates/story?id=138321896"
+    },
+    {
       "date": "2026-11-07",
       "contest": "Crooked Con straw poll",
       "summary": "Jon Ossoff was the first choice of 38.4 percent of 990 attendees at Crooked Media's progressive conference, followed by Alexandria Ocasio-Cortez at 16.6 percent and Pete Buttigieg at about 14 percent. It is an unscientific poll of activists.",
@@ -484,6 +532,18 @@
       "event": "Newsom decision expected",
       "note": "Newsom says he will decide after spending the next few weeks with his family.",
       "label": "Early Jan 2027"
+    },
+    {
+      "date": "2027-01-15",
+      "label": "Jan 2027",
+      "event": "DNC announces first debate details",
+      "note": "Dates and media partners for the June and July 2027 debates."
+    },
+    {
+      "date": "2027-06-15",
+      "label": "June 2027",
+      "event": "First Democratic primary debate",
+      "note": "The first of 12 DNC debates; the second follows in July."
     },
     {
       "date": "2028-01-22",
