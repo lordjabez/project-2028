@@ -109,17 +109,39 @@ These are real people and the page is public.
 
 ### Portraits
 
-A candidate without a file at `images/portraits/<slug>.webp` gets a
-monogram, which is fine. To add a portrait, use only a public-domain or
-freely licensed photo from Wikimedia Commons. Prefer public domain
-(official government portraits). Download it to a temporary path outside
-the repo, then run `uv run tools/portrait.py <downloaded-file> <slug>`,
-which crops it to 4:5 and writes both the 400x500 portrait and the
-thumbnail used in the race chart. Delete the download afterward. If the
-license requires attribution (CC BY, CC BY-SA), add a `photo_credit` to
-the candidate with the `author` and `license` exactly as Commons lists
-them and the Commons file page as `url`. If the download or the script
-fails, skip the portrait.
+Every candidate should have a portrait. Whenever a candidate in
+`candidates` has no file at `images/portraits/<slug>.webp` (always true
+for someone new to the board), find and add one in the same update.
+
+1. Use only Wikimedia Commons, and only a public-domain or freely licensed
+   photo. Prefer public domain, which official government portraits
+   usually are (U.S. Senate and House photographers, state governments).
+2. Search Commons through its API rather than guessing file names, e.g.
+   `https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&format=json&srsearch=<name> official portrait`.
+   Then check each candidate file with
+   `action=query&prop=imageinfo&iiprop=url|size|extmetadata&titles=File:<name>`,
+   which gives the original URL, dimensions, `LicenseShortName` and
+   `Artist`. Send a descriptive `User-Agent` with every request, or
+   Wikimedia may refuse it.
+3. Pick a recent, head-and-shoulders photo of the person alone, facing
+   the camera, at least 400x500. Official portraits are often
+   three-quarter length, which leaves the face tiny once cropped to 4:5;
+   when Commons has a tighter crop of the same photo (titles like
+   "(cropped)" or "(upper crop)"), use that instead.
+4. Download it to a temporary path outside the repo, then run
+   `uv run tools/portrait.py <downloaded-file> <slug>`, which crops it to
+   4:5 and writes both the 400x500 portrait and the thumbnail used in the
+   race chart. Look at the resulting portrait: the face should fill
+   roughly the upper half of the frame, like the existing ones. If it
+   does not, try another file. Delete the download afterward.
+5. If the license requires attribution (CC BY, CC BY-SA), add a
+   `photo_credit` to the candidate with the `author` and `license`
+   exactly as Commons lists them and the Commons file page as `url`.
+   Public-domain photos need no credit.
+
+If no suitable photo exists or the download or script fails, the
+candidate gets a monogram; do not hold the update for it. Try again the
+following week.
 
 ## 4. Build and check
 
